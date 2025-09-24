@@ -1,0 +1,209 @@
+# Configuração do ArboreoMonitor
+
+# Configurações de processamento de vídeo
+video_processing:
+  # Intervalos de amostragem (em segundos)
+  normal_interval: 300        # 5 minutos para vídeos normais
+  ipcam_interval: 3600        # 1 hora para IP cams
+  large_file_interval: 1800   # 30 minutos para arquivos grandes
+  
+  # Configurações de qualidade
+  min_frame_quality: 0.7
+  motion_threshold: 0.1
+  brightness_threshold: 30
+  
+  # Configurações de buffer
+  buffer_size: 10
+  max_retry_attempts: 3
+  connection_timeout: 30
+
+# Configurações de detecção
+detection:
+  # Modelos de detecção
+  yolo_model: "yolov8n.pt"
+  detectron2_model: "COCO-InstanceSegmentation/mask_rcnn_R_50_FPN_3x.yaml"
+  
+  # Parâmetros de detecção
+  min_confidence: 0.5
+  min_plant_size: 60          # cm
+  iou_threshold: 0.5
+  
+  # Configurações de segmentação
+  segmentation_method: "hybrid"  # color, watershed, deep_learning, hybrid
+  color_lower_hsv: [35, 50, 50]
+  color_upper_hsv: [85, 255, 255]
+  
+  # Configurações de classificação
+  species_classification: true
+  growth_stage_detection: true
+  health_assessment: true
+
+# Configurações de análise
+analysis:
+  # Análise de crescimento
+  growth_threshold: 0.1       # cm/dia
+  health_threshold: 0.3
+  change_threshold: 0.3
+  
+  # Configurações de modelagem 3D
+  model3d_method: "photogrammetry"  # photogrammetry, deep_learning, hybrid
+  model3d_quality: "medium"          # low, medium, high
+  model3d_export_formats: ["obj", "ply"]
+  
+  # Configurações de detecção de mudanças
+  change_detection_method: "hybrid"
+  cut_detection: true
+  growth_detection: true
+  disease_detection: true
+  damage_detection: true
+  
+  # Configurações de anomalias
+  anomaly_detection: true
+  height_anomaly_threshold: 2.0
+  health_anomaly_threshold: 0.3
+
+# Configurações de banco de dados
+database:
+  url: "sqlite:///data/arboreo.db"
+  # Para PostgreSQL: "postgresql://user:password@localhost:5432/arboreo"
+  
+  # Configurações de conexão
+  pool_size: 10
+  max_overflow: 20
+  pool_timeout: 30
+  pool_recycle: 3600
+  
+  # Configurações de backup
+  backup_enabled: true
+  backup_interval: "daily"
+  backup_retention_days: 30
+
+# Configurações de Redis
+redis:
+  url: "redis://localhost:6379"
+  
+  # Configurações de cache
+  cache_ttl: 3600            # 1 hora
+  max_memory: "2gb"
+  eviction_policy: "allkeys-lru"
+  
+  # Configurações de persistência
+  save_interval: 900          # 15 minutos
+  save_changes: 1
+
+# Configurações da API
+api:
+  host: "0.0.0.0"
+  port: 8000
+  key: "your_api_key_here"
+  
+  # Configurações de segurança
+  cors_origins: ["*"]
+  rate_limit: 100            # requests por minuto
+  rate_limit_window: 60      # segundos
+  
+  # Configurações de autenticação
+  jwt_secret: "your_jwt_secret"
+  jwt_expiration: 86400      # 24 horas
+  
+  # Configurações de documentação
+  docs_enabled: true
+  docs_path: "/docs"
+
+# Configurações de logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  
+  # Configurações de arquivos
+  file_enabled: true
+  file_path: "logs/arboreo_monitor.log"
+  file_max_size: "10MB"
+  file_backup_count: 5
+  
+  # Configurações de console
+  console_enabled: true
+  console_level: "INFO"
+
+# Configurações de monitoramento
+monitoring:
+  # Métricas
+  metrics_enabled: true
+  metrics_port: 9090
+  metrics_path: "/metrics"
+  
+  # Health checks
+  health_check_interval: 30  # segundos
+  health_check_timeout: 10   # segundos
+  
+  # Alertas
+  alerts_enabled: true
+  alert_email: "admin@example.com"
+  alert_webhook: "https://hooks.slack.com/services/..."
+
+# Configurações de armazenamento
+storage:
+  # Diretórios
+  data_dir: "data"
+  input_dir: "data/input"
+  output_dir: "data/output"
+  models_dir: "data/models"
+  metadata_dir: "data/metadata"
+  
+  # Configurações de arquivos
+  max_file_size: "100MB"
+  allowed_formats: ["jpg", "jpeg", "png", "tiff", "bmp", "mp4", "avi", "mov"]
+  
+  # Configurações de limpeza
+  cleanup_enabled: true
+  cleanup_interval: 86400    # 24 horas
+  retention_days: 90
+
+# Configurações de IP cams
+ipcams:
+  # Lista de IP cams
+  list_file: "data/ipcam_list.json"
+  
+  # Configurações de conexão
+  connection_timeout: 30
+  retry_attempts: 3
+  retry_delay: 5
+  
+  # Configurações de processamento
+  processing_enabled: true
+  processing_interval: 3600  # 1 hora
+  max_concurrent_streams: 5
+
+# Configurações de notificações
+notifications:
+  # Email
+  email_enabled: false
+  email_smtp_host: "smtp.gmail.com"
+  email_smtp_port: 587
+  email_username: "your_email@gmail.com"
+  email_password: "your_password"
+  
+  # Webhook
+  webhook_enabled: false
+  webhook_url: "https://hooks.slack.com/services/..."
+  webhook_secret: "your_webhook_secret"
+  
+  # Configurações de alertas
+  alert_growth_anomaly: true
+  alert_health_decline: true
+  alert_plant_cut: true
+  alert_disease_detected: true
+
+# Configurações de desenvolvimento
+development:
+  debug: false
+  reload: false
+  profiling: false
+  
+  # Configurações de teste
+  test_data_enabled: false
+  test_data_path: "data/test"
+  
+  # Configurações de mock
+  mock_models: false
+  mock_detection: false

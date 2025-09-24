@@ -1,0 +1,262 @@
+[
+  {
+    "name": "Central Park NYC",
+    "url": "http://207.251.86.238/cctv/centralpark.jpg",
+    "type": "http",
+    "location": "New York, USA",
+    "description": "Vista do Central Park com muitas árvores",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 40.7829,
+      "longitude": -73.9654
+    }
+  },
+  {
+    "name": "Hyde Park London",
+    "url": "http://www.earthcam.com/usa/newyork/timessquare/?cam=tsrobo1",
+    "type": "http",
+    "location": "London, UK",
+    "description": "Hyde Park com vegetação urbana",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 51.5074,
+      "longitude": -0.1278
+    }
+  },
+  {
+    "name": "Golden Gate Park",
+    "url": "http://sfgate.com/cgi-bin/object/cameras",
+    "type": "http",
+    "location": "San Francisco, USA",
+    "description": "Golden Gate Park com árvores e jardins",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 37.7694,
+      "longitude": -122.4862
+    }
+  },
+  {
+    "name": "Stanley Park Vancouver",
+    "url": "http://vancouver.ca/parks-recreation-culture/stanley-park.aspx",
+    "type": "http",
+    "location": "Vancouver, Canada",
+    "description": "Stanley Park com floresta urbana",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 49.3043,
+      "longitude": -123.1442
+    }
+  },
+  {
+    "name": "Retiro Madrid",
+    "url": "http://www.madrid.es/portales/munimadrid/es/Inicio/El-Ayuntamiento/Medios-de-comunicacion/Webcams?vgnextfmt=default&vgnextoid=1234567890",
+    "type": "http",
+    "location": "Madrid, Spain",
+    "description": "Parque del Retiro com jardins históricos",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 40.4168,
+      "longitude": -3.7038
+    }
+  },
+  {
+    "name": "Tiergarten Berlin",
+    "url": "http://www.berlin.de/webcams/",
+    "type": "http",
+    "location": "Berlin, Germany",
+    "description": "Tiergarten com vegetação urbana",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 52.5200,
+      "longitude": 13.4050
+    }
+  },
+  {
+    "name": "Luxembourg Gardens Paris",
+    "url": "http://www.paris.fr/webcams",
+    "type": "http",
+    "location": "Paris, France",
+    "description": "Jardins du Luxembourg com árvores históricas",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 48.8566,
+      "longitude": 2.3522
+    }
+  },
+  {
+    "name": "Ueno Park Tokyo",
+    "url": "http://www.tokyo-park.or.jp/webcam/",
+    "type": "http",
+    "location": "Tokyo, Japan",
+    "description": "Ueno Park com cerejeiras e vegetação",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 35.7167,
+      "longitude": 139.7756
+    }
+  },
+  {
+    "name": "Royal Botanic Gardens Sydney",
+    "url": "http://www.rbgsyd.nsw.gov.au/webcam",
+    "type": "http",
+    "location": "Sydney, Australia",
+    "description": "Jardim botânico com plantas nativas",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": -33.8688,
+      "longitude": 151.2093
+    }
+  },
+  {
+    "name": "Ibirapuera Park São Paulo",
+    "url": "http://www.prefeitura.sp.gov.br/webcam",
+    "type": "http",
+    "location": "São Paulo, Brazil",
+    "description": "Parque Ibirapuera com vegetação tropical",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": -23.5505,
+      "longitude": -46.6333
+    }
+  },
+  {
+    "name": "Chapultepec Park Mexico City",
+    "url": "http://www.cdmx.gob.mx/webcam",
+    "type": "http",
+    "location": "Mexico City, Mexico",
+    "description": "Bosque de Chapultepec com árvores antigas",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 19.4326,
+      "longitude": -99.1332
+    }
+  },
+  {
+    "name": "Kew Gardens London",
+    "url": "http://www.kew.org/webcam",
+    "type": "http",
+    "location": "London, UK",
+    "description": "Royal Botanic Gardens Kew com plantas exóticas",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 51.4789,
+      "longitude": -0.2955
+    }
+  },
+  {
+    "name": "Butchart Gardens Victoria",
+    "url": "http://www.butchartgardens.com/webcam",
+    "type": "http",
+    "location": "Victoria, Canada",
+    "description": "Butchart Gardens com jardins temáticos",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 48.4284,
+      "longitude": -123.3656
+    }
+  },
+  {
+    "name": "Kirstenbosch Cape Town",
+    "url": "http://www.sanbi.org/webcam",
+    "type": "http",
+    "location": "Cape Town, South Africa",
+    "description": "Kirstenbosch National Botanical Garden",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": -33.9881,
+      "longitude": 18.4302
+    }
+  },
+  {
+    "name": "Singapore Botanic Gardens",
+    "url": "http://www.nparks.gov.sg/webcam",
+    "type": "http",
+    "location": "Singapore",
+    "description": "Singapore Botanic Gardens com orquídeas",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 1.3143,
+      "longitude": 103.8158
+    }
+  },
+  {
+    "name": "Forest Research Institute Malaysia",
+    "url": "http://www.frim.gov.my/webcam",
+    "type": "http",
+    "location": "Kuala Lumpur, Malaysia",
+    "description": "Instituto de Pesquisa Florestal com floresta tropical",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 3.1390,
+      "longitude": 101.6869
+    }
+  },
+  {
+    "name": "Morton Arboretum Chicago",
+    "url": "http://www.mortonarb.org/webcam",
+    "type": "http",
+    "location": "Chicago, USA",
+    "description": "Morton Arboretum com árvores de todo o mundo",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 41.8781,
+      "longitude": -87.6298
+    }
+  },
+  {
+    "name": "Arnold Arboretum Boston",
+    "url": "http://www.arboretum.harvard.edu/webcam",
+    "type": "http",
+    "location": "Boston, USA",
+    "description": "Arnold Arboretum da Universidade de Harvard",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 42.3601,
+      "longitude": -71.0589
+    }
+  },
+  {
+    "name": "Missouri Botanical Garden",
+    "url": "http://www.missouribotanicalgarden.org/webcam",
+    "type": "http",
+    "location": "St. Louis, USA",
+    "description": "Missouri Botanical Garden com plantas tropicais",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 38.6270,
+      "longitude": -90.1994
+    }
+  },
+  {
+    "name": "Desert Botanical Garden Phoenix",
+    "url": "http://www.dbg.org/webcam",
+    "type": "http",
+    "location": "Phoenix, USA",
+    "description": "Desert Botanical Garden com plantas do deserto",
+    "enabled": true,
+    "timeout": 30,
+    "coordinates": {
+      "latitude": 33.4484,
+      "longitude": -112.0740
+    }
+  }
+]
